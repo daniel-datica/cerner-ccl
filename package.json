@@ -1,0 +1,25 @@
+{
+    "name": "cerner-ccl",
+    "displayName": "Cerner CCL",
+    "description": "Language extension for Cerner CCL by Datica",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.45.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ccl",
+            "aliases": ["Cerner CCL", "ccl"],
+            "extensions": [".prg",".inc",".tst"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ccl",
+            "scopeName": "source.prg",
+            "path": "./syntaxes/ccl.tmLanguage.json"
+        }]
+    }
+}
